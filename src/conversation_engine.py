@@ -5,7 +5,7 @@ from llama_index.core import load_index_from_storage
 from llama_index.core import StorageContext
 from llama_index.core.memory import ChatMemoryBuffer
 from llama_index.core.tools import QueryEngineTool, ToolMetadata
-from llama_index.agent.openai import OpenAiAgent
+from llama_index.agent.openai import OpenAIAgent
 from llama_index.core.storage.chat_store import SimpleChatStore
 from llama_index.core.tools import FunctionTool
 from src.global_settings import INDEX_STORAGE, CONVERSATION_FILE,SCORES_FILE
