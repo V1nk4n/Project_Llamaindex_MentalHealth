@@ -1,6 +1,6 @@
 from llama_index.core import SimpleDirectoryReader
 from llama_index.core.ingestion import IngestionPipeline, IngestionCache
-from llama_index.core.node_parser import TokenTextSpliter
+from llama_index.core.node_parser import TokenTextSplitter
 from llama_index.core.extractors import SummaryExtractor
 from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.core import Settings
@@ -8,7 +8,7 @@ from llama_index.llms.openai import OpenAI
 import openai
 import streamlit as st
 from src.global_settings import STORAGE_PATH, FILES_PATH, CACHE_FILE
-from scr.prompts import CUSTORM_SUMMARY_EXTRACT_TEMPLATE
+from src.prompts import CUSTORM_SUMMARY_EXTRACT_TEMPLATE
 
 openai.api_key = st.secrets.openai.OPENAI_API_KEY
 Settings.llm = OpenAI(model="gpt-4o-mini", temperature=2.0)
